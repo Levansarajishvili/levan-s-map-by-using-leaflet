@@ -143,3 +143,22 @@ const polygon = L.polygon([
     fillColor: 'mintgreen', // შიდა ფერი
     fillOpacity: 0.4     // გამჭვირვალობა
 }).addTo(map);
+
+
+// მანძილის მთვლელი
+// კოორდინატები
+const mtskheta = L.latLng(41.8452, 44.7196);
+const tbilisi = L.latLng(41.6938, 44.8015);
+const sagarejo = L.latLng(41.7283, 45.3314);
+
+// მანძილები მეტრებში → კილომეტრებში გადაყვანა
+const dist_mtskheta_tbilisi = (map.distance(mtskheta, tbilisi) / 1000).toFixed(1);
+const dist_tbilisi_sagarejo = (map.distance(tbilisi, sagarejo) / 1000).toFixed(1);
+const dist_mtskheta_sagarejo = (map.distance(mtskheta, sagarejo) / 1000).toFixed(1);
+
+// პოლიგონს popup დაამატე
+polygon.bindPopup(`
+    მცხეთა → თბილისი: ${dist_mtskheta_tbilisi} კმ <br>
+    თბილისი → საგარეჯო: ${dist_tbilisi_sagarejo} კმ <br>
+    მცხეთა → საგარეჯო: ${dist_mtskheta_sagarejo} კმ
+`);
