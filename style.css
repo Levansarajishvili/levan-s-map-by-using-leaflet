@@ -5,16 +5,17 @@
     color: black;
     border-radius: 10px;
     border: 1px solid #555;
-    padding: 0.7rem;
+    padding: 0.4rem;
 }
 
 .leaflet-control-layers label {
     color: black;
     font-size: 20px;
+    padding-bottom: 1rem;
 }
 
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out {
-    padding: 0.7rem !important;
+    padding: 0.4rem !important;
     border-radius: 0.5rem !important;
 }
