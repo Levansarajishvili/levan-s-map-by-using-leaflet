@@ -1,0 +1,50 @@
+svg fill colors #1E2027
+
+//მარკერი
+const marker_tbilisi = L.marker([41.6938, 44.8015]).addTo(map)
+    .bindPopup('თბილისი 🇬🇪');
+
+const marker_mtskheta = L.marker([41.8452, 44.7196]).addTo(map)
+    .bindPopup('მცხეთა');
+
+const marker_batumi = L.marker([41.6168, 41.6367]).addTo(map)
+    .bindPopup('ბათუმი');
+
+const marker_kutaisi = L.marker([42.2679, 42.7181]).addTo(map)
+    .bindPopup('ქუთაისი');
+
+const marker_zugdidi = L.marker([42.5088, 41.8707]).addTo(map)
+    .bindPopup('ზუგდიდი');
+
+const marker_kutaisi_airport = L.marker([42.1767, 42.4826]).addTo(map)
+    .bindPopup('ქუთაისის აეროპორტი ✈️');
+
+const marker_sagarejo = L.marker([41.7283, 45.3314]).addTo(map)
+    .bindPopup('საგარეჯო');
+
+const marker_gurjaani = L.marker([41.7419, 45.7938]).addTo(map)
+    .bindPopup('გურჯაანი');
+
+const marker_telavi = L.marker([41.9197, 45.4775]).addTo(map)
+    .bindPopup('თელავი');
+
+const marker_gori = L.marker([41.9857, 44.1109]).addTo(map)
+    .bindPopup('გორი');
+
+const marker_mestia = L.marker([43.0531, 42.7210]).addTo(map)
+    .bindPopup('მესტია');
+
+const marker_ambrolauri = L.marker([42.5272, 43.1492]).addTo(map)
+    .bindPopup('ამბროლაური');
+
+const marker_oni = L.marker([42.5853, 43.4328]).addTo(map)
+    .bindPopup('ონი');
+
+const marker_bakuriani = L.marker([41.7500, 43.5286]).addTo(map)
+    .bindPopup('ბაკურიანი ⛷️');
+
+const marker_gudauri = L.marker([42.4737, 44.4799]).addTo(map)
+    .bindPopup('გუდაური ⛷️');
+
+const marker_kazbegi = L.marker([42.6559, 44.6415]).addTo(map)
+    .bindPopup('ყაზბეგი 🏔️');
